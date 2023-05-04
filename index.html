@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image"> 
+  <title>Lazza</title>
+</head>
+
+<body>
+  <div class="main sticky-top">
+    <nav class="navbar navbar-expand-md ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/img/logo.png " alt="logo image " class="img-fluid "
+            width="125px"></a>
+        <div class="icons d-flex justify-content-around ms-4 d-md-none">
+          <img src="assets/img/search.png" class="" alt="">
+
+          <img src="assets/img/cart.png" class="ms-4" alt="">
+          <span class="cart_items" id="cntcart">0</span>
+
+          <img src="assets/img/account.png" class="ms-4" alt="">
+
+        </div>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bg-white"></span>
+        </button> -->
+
+        <button class="navbar-toggler toggler-color " type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bg-light text-center align-content-center"><i class="bi bi-list"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#">HOME</a>
+            <a class="nav-link" href="#">PRODUCTS</a>
+            <a class="nav-link" href="#">OFFERS</a>
+            <a class="nav-link" href="#">ABOUT US</a>
+            <a class="nav-link" href="#">CONTACT US</a>
+          </div>
+        </div>
+        <div class="icons d-flex justify-content-around ms-4 d-none d-md-inline">
+          <img src="assets/img/search.png" class="" alt="" onclick="login()">
+
+          <img src="assets/img/cart.png" class="ms-4" alt="" onclick="login()">
+          <span class="cart_items" id="cntcart">0</span>
+
+          <img src="assets/img/account.png" class="ms-4" alt="" onclick="login()">
+        </div>
+
+      </div>
+    </nav>
+  </div>
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/img-1.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- product-part -->
+  <div class="prod-part">
+    <div class="container-fluid p-4">
+      <h3 class="text-center display-2 mt-5">
+        WIDE RANGE OF OUR PRODUCTS
+      </h3>
+      <div class="row mt-5">
+        <div class="col-md-4 col-sm-offset-2">
+          <div class="sm-margin visible-xs">
+            <div class="card border-0">
+              <img src="assets/img/sugarfree.png" class="card-img-top product-image img-fluid" alt="...">
+              <div class="card-body">
+                <p class="card-text text-center card-desc display-6">SUGAR FREE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-offset-2">
+          <div class="mobile-margin visible-sm">
+            <div class="card border-0">
+              <img src="assets/img/basic.png" class="card-img-top img-fluid product-image" alt="...">
+              <div class="card-body">
+                <p class="card-text text-center display-6">BASIC SERIES</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-offset-2">
+          <div class="mobile-margin visible-sm">
+            <div class="card border-0">
+              <img src="assets/img/indulge.png" class="card-img-top img-fluid product-image" alt="...">
+              <div class="card-body">
+                <p class="card-text text-center display-6">INDULGENCE SERIES</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-4 col-sm-offset-2">
+          <div class="mobile-margin visible-xs">
+            <div class="card border-0">
+              <img src="assets/img/premium.png" class="card-img-top product-image img-fluid" alt="...">
+              <div class="card-body">
+                <p class="card-text text-center card-desc display-6">PREMIUM SERIES</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-offset-2">
+          <div class="mobile-margin visible-xs">
+            <div class="card border-0">
+              <img src="assets/img/ethnic.png" class="card-img-top img-fluid product-image" alt="...">
+              <div class="card-body">
+                <p class="card-text text-center display-6">ETHNIC SERIES</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-offset-2">
+          <div class="mobile-margin visible-xs">
+            <div class="card border-0">
+              <img src="assets/img/natural.png" class="card-img-top img-fluid product-image" alt="...">
+              <div class="card-body">
+                <p class="card-text text-center display-6">NATURAL SERIES</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="row mt-5">
+        <div class="col-md-4 col-sm-offset-2">
+          <div class="mobile-margin visible-xs">
+            <div class="card border-0">
+              <img src="assets/img/boutique" card-img-top product-image img-fluid" alt="...">
+              <div class="card-body">
+                <p class="card-text text-center card-desc display-6">BOUTIQUE SERIES</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- deals section -->
+
+  <section class="final-section">
+    <div class="container-fluid home-final-container bg-black">
+      <div class="final-section-image bg-black">
+        <img src="assets/img/img-2.png" alt="sugar free" class="d-block w-100">
+      </div>
+    </div>
+  </section>
+
+  <section class="final-item-section">
+    <div class="final-section-image">
+      <img src="assets/img/img-3" alt="awsome free" class="d-block w-100">
+    </div>
+  </section>
+
+  <!-- footer -->
+
+  <footer>
+    <div class="container-fluid footer-container">
+      <div class="row  footer-row p-md-3 px-sm-2">
+        <!-- footer left logo -->
+        <div class="col-md-2 col-sm-12 mt-1 pt-sm-3 footer-padding visible-xs">
+          <img src="assets/img/simons.png" alt="" class="footer-logo-left simons-logo mx-auto img-fluid">
+        </div>
+
+        <!-- help-section -->
+        <div class="col-md-2 col-sm-12 ">
+          <div class="footer-padding visible-xs">
+            <h6 class="text-uppercase fw-bold mb-2">
+              HELP
+            </h6>
+            <p>Track Your Order</p>
+            <p>Chat with Us</p>
+            <p>Support</p>
+          </div>
+        </div>
+
+        <!-- about -->
+        <div class="col-md-2 col-sm-12 ">
+          <div class="footer-padding visible-xs">
+
+            <h6 class="text-uppercase fw-bold mb-2">
+              ABOUT
+            </h6>
+            <p>Our History</p>
+            <p>Privacy Policy</p>
+            <p>Cancellation Policy</p>
+          </div>
+        </div>
+
+        <!-- products -->
+        <div class="col-md-2 col-sm-12 ">
+          <div class="footer-padding visible-xs">
+
+            <h6 class="text-uppercase fw-bold mb-2 text-height">
+              PRODUCTS
+            </h6>
+            <p>
+              <a href="#" class="text-reset">Our Products</a>
+            </p>
+            <p>
+              <a href="#" class="text-reset">Offers</a>
+            </p>
+            <p>
+              <a href="#" class="text-reset">About Us</a>
+            </p>
+            <p>
+              <a href="#" class="text-reset">Contact Us</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- contact -->
+        <div class="col-md-2 col-sm-12">
+          <div class="footer-padding visible-xs">
+
+            <h6 class="text-uppercase fw-bold mb-2">Contact US</h6>
+            <p>9946037777</p>
+            <p>
+              support@lazza.co.in
+            </p>
+            <div class="social-media-link d-flex ">
+              <p><a href=""><i class="bi bi-facebook ms-2 fs-3 social-media-link"></i></a></p>
+              <p><a href=""><i class="bi bi-instagram ms-2 fs-3 social-media-link"></i></a></p>
+              <p><a href=""><i class="bi bi-pinterest ms-2 fs-3 social-media-link"></i></a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer logo right -->
+
+        <div class="col-md-2 col-sm-12 mt-1">
+          <img src="assets/img/logo-gold.png" alt="" class="footer-logo-left golden-left mx-auto img-fluid">
+        </div>
+      </div>
+    </div>
+
+    <!-- copyright -->
+    <div class="container-fluid">
+      <div class="copywrite-section d-flex justify-content-sm-between gap-xs-1 p-3">
+        <div class="copy-write-text">
+          <p>© Lazza Ice Creams - 2022</p>
+        </div>
+        <div class="copy-write-text">
+          <p>Site Powered By Igen Software Solutions</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-button  d-flex justify-content-center p-1">
+      <button type="button" class="btn btn-outline-warning">
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+          <i class="bi bi-arrow-up" style="color: #be9509"></i>
+      </button>
+    </div>
+
+  </footer>
+
+
+  <script>
+    function login() {
+      var redirect = confirm('you have to login first');
+
+      if (redirect) {
+        window.location.href = "https://lazza.co.in/login";
+      }
+      else {
+        window.history.back();
+      }
+    }
+  </script>
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
